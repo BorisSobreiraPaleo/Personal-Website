@@ -28,6 +28,7 @@ const Contact = () => {
 
   const { isDarkMode } = useTheme()
   const { language } = useLanguage()
+  const translation = translations[language] || {};
   const {
     contact,
     name,
@@ -35,7 +36,7 @@ const Contact = () => {
     subject,
     message,
     send,
-  } = translations[language];
+  } = translation;
 
 
   const initialState = {
