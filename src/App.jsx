@@ -22,7 +22,7 @@ function App() {
           <Main/>
           <Work/>
           <Projects/>
-          <Contact/>
+          {/* <Contact/> */}
           <Footer/>
         </ThemeProvider>
       </LanguageProvider>
