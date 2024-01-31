@@ -39,7 +39,7 @@ const TopNav = () => {
     <div id='topBar' className='absolute z-50 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'>
       <div id="bubbleTop"
           className={`
-            fixed bg-black/50 dark:bg-white/50 backdrop-blur-lg rounded-full
+            absolute bg-black/50 dark:bg-white/50 backdrop-blur-lg rounded-full
             left-[var(--left)] top-[var(--top)]
             w-[var(--width)] h-[var(--height)]
             transition-all duration-500 ease-in-out

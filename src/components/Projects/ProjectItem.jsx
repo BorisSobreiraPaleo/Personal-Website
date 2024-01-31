@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { FaReact } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import useLanguage from '../../languageContext/useLanguage';

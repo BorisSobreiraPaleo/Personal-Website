@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const WorkItem = ({year, title, subtitle, details}) => {
   return (
     <ol className="flex flex-col md:flex-row relative border-l border-[#03396c]" >
