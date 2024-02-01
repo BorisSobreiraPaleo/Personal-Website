@@ -16,7 +16,7 @@ const Sidenav = () => {
           }
         });
       },
-      { root: null, rootMargin: '0%', threshold: 0.1 }
+      { root: null, rootMargin: '-40%', threshold: 0 }
     );
 
     const sections = document.querySelectorAll('section');
