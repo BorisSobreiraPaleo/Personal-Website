@@ -25,11 +25,11 @@ const Footer = () => {
         }
         alt="mainWaveDark" className="h-7 w-full object-none object-bottom"/>
         </div>
-        <div className="flex flex-wrap items-center text-center [&>*]:m-1 justify-center w-full h-auto text-[#000B11] text-xl dark:bg-[#4d5559] bg-[#b2cddf]">
+        <div className="flex flex-wrap items-center justify-center text-center [&>*]:m-1 w-full h-auto text-[#000B11] text-2xl dark:bg-[#4d5559] bg-[#b2cddf]">
           <div>
             <p> Boris Sobreira Paleo </p>
           </div>
-          <div className="flex [&>*]:m-1">
+          <div className="flex gap-1">
             <a href='https://www.linkedin.com/in/borissobreirapaleo/' >
               <FaLinkedin/>
             </a>

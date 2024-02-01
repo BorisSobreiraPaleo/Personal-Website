@@ -150,11 +150,11 @@ const Contact = () => {
           method="POST"
           encType="multipart/form-data"
           className="font-bold [&>div>div>label]:dark:text-[#F4F4F9] [&>div>label]:dark:text-[#F4F4F9]">
-            <div className="grid md:grid-cols-2 gap-4 w-full">
+            <div className="grid md:grid-cols-2 md:gap-4 w-full">
               <div className="flex flex-col">
                 <label className="uppercase text-sm py-2">{name}</label>
                 <input
-                  className="bg-[#b2cddf] dark:bg-[#4d5559] border-2 rounded-lg p-3 flex border-[#03396c]"
+                  className="w-full bg-[#b2cddf] dark:bg-[#4d5559] border-2 rounded-lg p-3 flex border-[#03396c]"
                   type="text"
                   name="name"
                   value={formData.name}
@@ -165,7 +165,7 @@ const Contact = () => {
               <div className="flex flex-col">
                 <label className="uppercase text-sm py-2">{phone}</label>
                 <input
-                className="bg-[#b2cddf] dark:bg-[#4d5559] border-2 rounded-lg p-3 flex border-[#03396c]"
+                className="w-full bg-[#b2cddf] dark:bg-[#4d5559] border-2 rounded-lg p-3 flex border-[#03396c]"
                 type="text"
                 name="phone"
                 value={formData.phone}
