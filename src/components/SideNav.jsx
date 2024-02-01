@@ -103,7 +103,7 @@ const Sidenav = () => {
             >
               <div>
                 <MdWorkOutline size={25} />
-                <span>{language === 'en' ? 'Career' : 'Trabajo'}</span>
+                <span>{language === 'en' ? 'Career' : 'Carrera'}</span>
               </div>
             </a>
             <a
