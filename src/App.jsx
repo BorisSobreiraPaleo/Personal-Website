@@ -1,5 +1,5 @@
 import Main from "./components/Main"
-import Work from "./components/Work/Work"
+import Career from "./components/Career/Career"
 import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact"
 import SideNav from "./components/SideNav"
@@ -20,7 +20,7 @@ function App() {
           <GoTop/>
           <SideNav/>
           <Main/>
-          <Work/>
+          <Career/>
           <Projects/>
           <Contact/>
           <Footer/>

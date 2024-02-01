@@ -1,4 +1,4 @@
-const enWorkData = [
+const enCareerData = [
   {
     id: "001",
     year: 2015,
@@ -51,4 +51,4 @@ const enWorkData = [
   
 ]
 
-export default enWorkData
+export default enCareerData

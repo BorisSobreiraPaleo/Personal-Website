@@ -1,4 +1,4 @@
-const esWorkData = [
+const esCareerData = [
   {
     id: '001',
     year: 2015,
@@ -50,4 +50,4 @@ const esWorkData = [
   }
 ]
 
-export default esWorkData
+export default esCareerData

@@ -98,12 +98,12 @@ const Sidenav = () => {
               </div>
             </a>
             <a
-              href="#work"
-              className={currentSection === 'work' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-[#B7CEE1]/80'}
+              href="#career"
+              className={currentSection === 'career' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-[#B7CEE1]/80'}
             >
               <div>
                 <MdWorkOutline size={25} />
-                <span>{language === 'en' ? 'Work' : 'Trabajo'}</span>
+                <span>{language === 'en' ? 'Career' : 'Trabajo'}</span>
               </div>
             </a>
             <a
@@ -152,8 +152,8 @@ const Sidenav = () => {
               </a>
             </li>
             <li>
-              <a href='#work'>
-                <div className={currentSection === 'work' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-white/30 text-black'}>
+              <a href='#career'>
+                <div className={currentSection === 'career' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-white/30 text-black'}>
                   <MdWorkOutline  size={25} />
                 </div>
               </a>
