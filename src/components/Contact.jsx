@@ -133,7 +133,7 @@ const Contact = () => {
     <section id="contact" className="dark:bg-[#000B11]">
       <div>
         <ToastContainer />
-        <div className="max-w-[1040px] m-auto md:pl-20 p-4 py-16 dark:bg-[#000B11]">
+        <div className="max-w-[1040px] m-auto md:pl-20 p-4 pt-16 dark:bg-[#000B11]">
           <h1 className="py-4 text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{contact}</h1>
           <p className="text-center py-8 dark:text-[#F4F4F9] text-[#000B11]">
             {
