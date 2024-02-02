@@ -53,7 +53,7 @@ const Main = () => {
   return(
     <section id='main'>
       <div className='flex justify-center items-center w-full h-screen flex-col'>
-        <div className="absolute w-full h-full top-0 left-0 z-10 bg-[#F4F4F9]/20 dark:bg-[#000B11]/20"/>
+        <div className="absolute object-cover w-full h-full top-0 left-0 z-10 bg-[#F4F4F9]/20 dark:bg-[#000B11]/20"/>
         <img src=
         {
           isDarkMode ? (
