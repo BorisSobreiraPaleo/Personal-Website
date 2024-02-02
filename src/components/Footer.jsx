@@ -29,21 +29,21 @@ const Footer = () => {
           <div>
             <p> Boris Sobreira Paleo </p>
           </div>
-          <div className="flex gap-1">
+          <div className="flex flex-wrap gap-1 items-center justify-center">
             <a href='https://www.linkedin.com/in/borissobreirapaleo/' >
-              <FaLinkedin/>
+              <FaLinkedin size={30}/>
             </a>
             <a href='https://github.com/BoriSeven'>
-              <FaGithub/>
+              <FaGithub size={30}/>
             </a>
             <a href='https://t.me/SevenSie7e'>
-              <FaTelegram/>
+              <FaTelegram size={30} />
             </a>
             <a href='https://www.hackerrank.com/profile/borissobreirapa1'>
-              <FaHackerrank/>
+              <FaHackerrank size={30} />
             </a>
             <a href='https://leetcode.com/BoriSeven/'>
-              <SiLeetcode/>
+              <SiLeetcode size={30} />
             </a>
           </div>
           <div>
