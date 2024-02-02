@@ -77,7 +77,7 @@ const Main = () => {
         }
         alt="/"
         />
-        <div className='absolute max-w-[700px] z-20 flex flex-col mt-auto mb-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[90%]'>
+        <div className='absolute max-w-[700px] z-20 flex flex-col top-1/2 transform -translate-y-[90%]'>
           <h1 className='sm:text-5xl text-4xl font-bold dark:text-[#F4F4F9] dark:drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]'>{language === 'es' ? 'Soy' : "I'm"} Boris Sobreira</h1>
           <h2 className='flex sm:text-3xl text-2xl pt-4 dark:text-[#F4F4F9] dark:drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]'>
             {language === 'es' ? 'Soy' : "I'm"}
