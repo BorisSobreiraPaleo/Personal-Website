@@ -8,39 +8,29 @@ const TopNav = () => {
     const listItem = document.querySelectorAll('#topBar ul > li > div');
     const bubbleTop = document.querySelector('#bubbleTop');
 
+    // Hay que limitar el movimiento de la bola o eliminarla cuando se sale del nav correspondiente
+
     listItem.forEach((item) => {
-      item.addEventListener('mouseenter', handleTouchStart);
-      item.addEventListener('mouseleave', handleTouchEnd);
-      item.addEventListener('touchstart', handleTouchStart);
-      item.addEventListener('touchend', handleTouchEnd);
+      item.addEventListener('mouseenter', () => {
+        const { left, top, width, height } = item.getBoundingClientRect();
+        bubbleTop.style.setProperty('--left', `${left}px`);
+        bubbleTop.style.setProperty('--top', `${top}px`);
+        bubbleTop.style.setProperty('--width', `${width}px`);
+        bubbleTop.style.setProperty('--height', `${height}px`);
+        bubbleTop.style.opacity = '1';
+        bubbleTop.style.visibility = 'visible';
+      });
+
+      item.addEventListener('mouseleave', () => {
+        bubbleTop.style.opacity = '0';
+        bubbleTop.style.visibility = 'hidden';
+      });
     });
-
-    function handleTouchStart(event) {
-      const boundingRect = event.target.getBoundingClientRect();
-      updateBubblePosition(boundingRect);
-    }
-
-    function handleTouchEnd() {
-      bubbleTop.style.opacity = '0';
-      bubbleTop.style.visibility = 'hidden';
-    }
-
-    function updateBubblePosition(boundingRect) {
-      const { left, top, width, height } = boundingRect;
-      bubbleTop.style.setProperty('--left', `${left}px`);
-      bubbleTop.style.setProperty('--top', `${top}px`);
-      bubbleTop.style.setProperty('--width', `${width}px`);
-      bubbleTop.style.setProperty('--height', `${height}px`);
-      bubbleTop.style.opacity = '1';
-      bubbleTop.style.visibility = 'visible';
-    }
 
     return () => {
       listItem.forEach((item) => {
-        item.removeEventListener('mouseenter', handleTouchStart);
-        item.removeEventListener('mouseleave', handleTouchEnd);
-        item.removeEventListener('touchstart', handleTouchStart);
-        item.removeEventListener('touchend', handleTouchEnd);
+        item.removeEventListener('mouseenter', () => {});
+        item.removeEventListener('mouseleave', () => {});
       });
     };
   }, []);
