@@ -52,7 +52,7 @@ const Main = () => {
   
   return(
     <section id='main'>
-      <div className='flex justify-center items-center w-full h-screen flex-col'>
+      <div className='flex items-center w-full h-screen flex-col'>
         <div className="absolute object-cover w-full h-full top-0 left-0 z-10 bg-[#F4F4F9]/20 dark:bg-[#000B11]/20"/>
         <img src=
         {
@@ -77,7 +77,7 @@ const Main = () => {
         }
         alt="/"
         />
-        <div className='absolute max-w-[700px] z-20 flex flex-col'>
+        <div className='absolute max-w-[700px] z-20 flex flex-col mt-80'>
           <h1 className='sm:text-5xl text-4xl font-bold dark:text-[#F4F4F9] dark:drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]'>{language === 'es' ? 'Soy' : "I'm"} Boris Sobreira</h1>
           <h2 className='flex sm:text-3xl text-2xl pt-4 dark:text-[#F4F4F9] dark:drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]'>
             {language === 'es' ? 'Soy' : "I'm"}
