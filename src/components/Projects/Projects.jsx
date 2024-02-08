@@ -39,17 +39,17 @@ const Projects = () => {
   return (
     <section id="projects" className="dark:bg-[#000B11]">
       <div className="max-w-[1040px] m-auto md:pl-20 p-4 pt-16 dark:bg-[#000B11]">
-        <h1 className="text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{language === 'en' ? 'Projects' : 'Proyectos'}</h1>
-        <p className="text-center py-8 dark:text-[#F4F4F9] text-[#000B11]">
+        <a href='https://github.com/BoriSeven'>
+          <h1 className="text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{language === 'en' ? 'Projects' : 'Proyectos'}</h1>
+        </a>
+        <div className="grid sm:grid-cols-2 py-8 gap-12">
           {
-            language === 'en' ?
-              'Welcome to my portfolio of projects! Here you will find a selection of highlighted works in systems administration and web development. From server implementation and dynamic website creation to more creative, personal, and original projects. For more information, you can also visit my '
-              :
-              'Bienvenido a mi portafolio de proyectos! Aquí encontrarás una selección de trabajos destacados en administración de sistemas y desarrollo web. Desde la implementación de servidores y creación de sitios web dinámicos hasta proyectos más creativos, personales y originales. Para más información también puedes visitar mi '
+            data.map(({id, imageLight, imageDark, title, details, url, techs})=>(
+              <ProjectItem key={id} image={isDarkMode ? imageDark : imageLight} title={title} details={details} url={url} techs={techs} />
+            ))
           }
-          <a href="https://github.com/BoriSeven" className=" underline">GitHub</a>
-        </p>
-        <div className="flex flex-wrap items-center justify-center pt-5 [&>*]:m-1 py-8 dark:text-[#F4F4F9] text-[#000B11]">
+        </div>
+        <div className="flex flex-wrap items-center justify-center pt-5 [&>*]:m-1 dark:text-[#F4F4F9] text-[#000B11]">
           <FaHtml5 size={50}/>
           <FaCss3Alt size={50}/>
           <FaWordpress size={50}/>
@@ -64,7 +64,7 @@ const Projects = () => {
           <SiEslint size={50}/>
           <FaNodeJs size={50}/>
           <SiRailway size={50}/>
-          <FaTelegram size={50} />
+          <FaTelegram size={50}/>
           <FaPhp size={50}/>
           <SiPhpmyadmin size={50}/>
           <SiMysql size={50}/>
@@ -76,13 +76,6 @@ const Projects = () => {
           <SiGnubash size={50}/>
           <VscTerminalCmd size={50}/>
           <SiPowershell size={50}/>
-        </div>
-        <div className="grid sm:grid-cols-2 gap-12">
-          {
-            data.map(({id, imageLight, imageDark, title, details, url, techs})=>(
-              <ProjectItem key={id} image={isDarkMode ? imageDark : imageLight} title={title} details={details} url={url} techs={techs} />
-            ))
-          }
         </div>
       </div>
     </section>

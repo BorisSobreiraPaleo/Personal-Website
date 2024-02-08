@@ -12,16 +12,7 @@ const Career = () => {
   return (
     <section id="career" className="dark:bg-[#000B11]">
       <div className="max-w-[1040px] dark:bg-[#000B11] m-auto md:pl-20 p-4 pt-16" >
-        <h1 className="text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{language === 'en' ? 'Career' : 'Carrera'}</h1>
-        <p className="text-center py-8 dark:text-[#F4F4F9] text-[#000B11]">
-          {
-            language === 'en' ?
-              'With a solid background in software development and system administration, I have built my career step by step, from my beginnings as a self-taught enthusiast to where I am today. Each project has been an opportunity to learn and grow professionally. To learn more about my journey, I invite you to visit my profile in '
-            :
-              'Con una sólida formación en desarrollo de software y administración de sistemas, he construido mi carrera paso a paso, desde mis inicios como autodidacta hasta llegar a donde estoy hoy. Cada proyecto ha sido una oportunidad para aprender y crecer profesionalmente. Para conocer más sobre mi trayectoria, te invito a visitar mi perfil de '
-          }
-          <a href="https://www.linkedin.com/in/borissobreirapaleo/" className="underline">LinkedIn</a>
-        </p>
+        <h1 className="text-4xl pb-8 font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{language === 'en' ? 'Career' : 'Carrera'}</h1>
         {
           invertedData.map(({id, year, title, subtitle, details})=>(
             <CareerItem
@@ -33,6 +24,18 @@ const Career = () => {
             />
           ))
         }
+        <p className="text-center dark:text-[#F4F4F9] text-[#000B11]">
+          {
+            language === 'en' ?
+            <span>
+              Feel free to explore more about my professional journey on my <a href="https://www.linkedin.com/in/borissobreirapaleo/" className="underline">LinkedIn</a> page. For a comprehensive overview of my skills and experiences, you can also download my <a href="link-to-cv" className="underline">CV</a>.
+            </span>
+            :
+            <span>
+              No dudes en explorar más sobre mi trayectoria profesional en mi página de <a href="https://www.linkedin.com/in/borissobreirapaleo/" className="underline">LinkedIn</a>. Para obtener una visión completa de mis habilidades y experiencias, también puedes descargar mi <a href="link-to-cv" className="underline">CV</a>.
+            </span>
+          }
+        </p>
       </div>
     </section>
   )

@@ -138,9 +138,9 @@ const Contact = () => {
           <p className="text-center py-8 dark:text-[#F4F4F9] text-[#000B11]">
             {
               language === 'en' ?
-                'Remember that you can contact more directly via '
+                'For more direct communications, reach out via '
               :
-                'Recuerda que puedes contactar de forma más directa a través de '
+                'Para una comunicación más directa, contáctame via '
             }
             <a href="https://t.me/SevenSie7e" className="underline">Telegram</a>
           </p>
