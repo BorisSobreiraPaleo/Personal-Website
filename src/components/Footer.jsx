@@ -30,19 +30,19 @@ const Footer = () => {
             <p> Boris Sobreira Paleo </p>
           </div>
           <div className="flex flex-wrap gap-1 items-center justify-center">
-            <a href='https://www.linkedin.com/in/borissobreirapaleo/' >
+            <a href='https://www.linkedin.com/in/borissobreirapaleo/' target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={30}/>
             </a>
-            <a href='https://github.com/BoriSeven'>
+            <a href='https://github.com/BoriSeven' target="_blank" rel="noopener noreferrer">
               <FaGithub size={30}/>
             </a>
-            <a href='https://t.me/SevenSie7e'>
+            <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer">
               <FaTelegram size={30} />
             </a>
-            <a href='https://www.hackerrank.com/profile/borissobreirapa1'>
+            <a href='https://www.hackerrank.com/profile/borissobreirapa1' target="_blank" rel="noopener noreferrer">
               <FaHackerrank size={30} />
             </a>
-            <a href='https://leetcode.com/BoriSeven/'>
+            <a href='https://leetcode.com/BoriSeven/' target="_blank" rel="noopener noreferrer">
               <SiLeetcode size={30} />
             </a>
           </div>

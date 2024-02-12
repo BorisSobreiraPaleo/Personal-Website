@@ -142,7 +142,7 @@ const Contact = () => {
               :
                 'Para una comunicación más directa, contáctame via '
             }
-            <a href="https://t.me/SevenSie7e" className="underline">Telegram</a>
+            <a href="https://t.me/SevenSie7e" target="_blank" rel="noopener noreferrer" className="underline">Telegram</a>
           </p>
           <form
           action="https://getform.io/f/b90df46b-da69-4e3f-9d66-11628e8f5b7a"

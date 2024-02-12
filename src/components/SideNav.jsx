@@ -53,7 +53,6 @@ const Sidenav = () => {
         const parentTop = bubbleSide.parentElement.getBoundingClientRect().top; // Obtener la posición del padre
         const transformedTop = top - parentTop; // Ajustar la posición con la transformación
 
-
         bubbleSide.style.setProperty('--left', `${left}px`);
         bubbleSide.style.setProperty('--top', `${transformedTop}px`);
         bubbleSide.style.setProperty('--width', `${width}px`);

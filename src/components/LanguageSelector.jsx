@@ -3,7 +3,7 @@ import useLanguage from "../languageContext/useLanguage";
 const LanguageSelector = () => {
   const { language, toggleLanguage } = useLanguage()
   return (
-    <div onClick={toggleLanguage} className="font-semibold text-[17px]">
+    <div onClick={toggleLanguage} className="font-semibold text-[16.67px]">
       {language === 'es' ? 'EN' : 'ES'}
     </div>
   )

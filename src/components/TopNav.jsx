@@ -20,8 +20,14 @@ const TopNav = () => {
     listItem.forEach((item) => {
       item.addEventListener('mouseenter', () => {
         const { left, top, width, height } = item.getBoundingClientRect();
-        bubbleTop.style.setProperty('--left', `${left}px`);
-        bubbleTop.style.setProperty('--top', `${top}px`);
+        const parentTop = bubbleTop.parentElement.getBoundingClientRect().top; // Obtener la posición del padre
+        const transformedTop = top - parentTop; // Ajustar la posición con la transformación
+        const parentLeft = bubbleTop.parentElement.getBoundingClientRect().left
+        const transformedLeft = left - parentLeft; // Ajustar la posición con la transformación
+
+
+        bubbleTop.style.setProperty('--left', `${transformedLeft}px`);
+        bubbleTop.style.setProperty('--top', `${transformedTop}px`);
         bubbleTop.style.setProperty('--width', `${width}px`);
         bubbleTop.style.setProperty('--height', `${height}px`);
         bubbleTop.style.opacity = '1';
@@ -45,12 +51,11 @@ const TopNav = () => {
 
   return (
     <div id='topBar'
-      // className='absolute z-50 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
       className={`
         ${isSmallScreen ?
-          'absolute z-50 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-amber-400 [&>ul>li>div]:dark:bg-amber-400 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
+          'absolute top-1/2 right-0 transform -translate-y-1/2 z-40 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
         :
-          'absolute z-50 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
+          'absolute z-40 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
         }
       `}
     >
@@ -60,7 +65,8 @@ const TopNav = () => {
           left-[var(--left)] top-[var(--top)]
           w-[var(--width)] h-[var(--height)]
           transition-all duration-500 ease-in-out
-          opacity-0 -z-10
+          opacity-0 
+          -z-10
         `}
       />
       <ul>

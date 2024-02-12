@@ -31,7 +31,7 @@ const ProjectItem = ({image, title, details, url, techs}) => {
         </div>
         <p className="pb-4 pt-2 dark:text-[#F4F4F9] text-center">{details}</p>
         <div className='flex justify-center'>
-          <a href={url}>
+          <a href={url} target="_blank" rel="noopener noreferrer">
             <div className="w-64 p-3 rounded-lg border border-[#b2cddf] bg-[#ffffff] dark:border-[#03396c] dark:bg-[#000B11] dark:text-[#F4F4F9] font-bold cursor-pointer text-lg">
               {language === 'en' ? 'More Info' : 'Más Información'}
             </div>

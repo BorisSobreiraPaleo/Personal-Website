@@ -28,11 +28,11 @@ const Career = () => {
           {
             language === 'en' ?
             <span>
-              Feel free to explore more about my professional journey on my <a href="https://www.linkedin.com/in/borissobreirapaleo/" className="underline">LinkedIn</a> page. For a comprehensive overview of my skills and experiences, you can also download my <a href="link-to-cv" className="underline">CV</a>.
+              Feel free to explore more about my professional journey on my <a href="https://www.linkedin.com/in/borissobreirapaleo/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a> page. For a comprehensive overview of my skills and experiences, you can also download my <a href="link-to-cv" target="_blank" rel="noopener noreferrer" className="underline">CV</a>.
             </span>
             :
             <span>
-              No dudes en explorar más sobre mi trayectoria profesional en mi página de <a href="https://www.linkedin.com/in/borissobreirapaleo/" className="underline">LinkedIn</a>. Para obtener una visión completa de mis habilidades y experiencias, también puedes descargar mi <a href="link-to-cv" className="underline">CV</a>.
+              No dudes en explorar más sobre mi trayectoria profesional en mi página de <a href="https://www.linkedin.com/in/borissobreirapaleo/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a>. Para obtener una visión completa de mis habilidades y experiencias, también puedes descargar mi <a href="link-to-cv" target="_blank" rel="noopener noreferrer" className="underline">CV</a>.
             </span>
           }
         </p>
