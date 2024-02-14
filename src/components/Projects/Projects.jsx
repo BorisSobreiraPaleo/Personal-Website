@@ -1,9 +1,13 @@
 import ProjectItem from "./ProjectItem"
 import useLanguage from "../../languageContext/useLanguage"
+import useTheme from "../../themeContext/useTheme"
 import enProjectsData from "../../assets/data/projects/enProjectsData"
 import esProjectsData from "../../assets/data/projects/esProjectsData"
-import useTheme from "../../themeContext/useTheme"
-import { useState, useEffect } from 'react';
+
+import enLightPersonalWeb from '../../assets/images/projects/enLightPersonalWeb.png';
+import enDarkPersonalWeb from '../../assets/images/projects/enDarkPersonalWeb.png';
+import esLightPersonalWeb from '../../assets/images/projects/esLightPersonalWeb.png';
+import esDarkPersonalWeb from '../../assets/images/projects/esDarkPersonalWeb.png';
 
 import { SiMongodb } from "react-icons/si"
 import { SiJavascript } from "react-icons/si";
@@ -35,26 +39,15 @@ import { SiPowershell } from "react-icons/si";
 const Projects = () => {
   const { language } = useLanguage()
   const { isDarkMode } = useTheme()
-  const [projectImages, setProjectImages] = useState([]);
 
   const data = language === 'en' ? enProjectsData : esProjectsData
 
-  useEffect(() => {
-    const importImages = async () => {
-      const images = await Promise.all(
-        data.map(async (project) => {
-          const { imageLight, imageDark } = project;
-          const lightImage = await import(`.${imageLight}`);
-          const darkImage = await import(`.${imageDark}`);
-          return { lightImage, darkImage };
-        })
-      );
-      setProjectImages(images);
-    };
-
-    importImages();
-  }, [data]);
-
+  const imageMap = {
+    enLightPersonalWeb,
+    enDarkPersonalWeb,
+    esLightPersonalWeb,
+    esDarkPersonalWeb
+  };
 
   return (
     <section id="projects" className="dark:bg-[#000B11]">
@@ -63,16 +56,11 @@ const Projects = () => {
           <h1 className="text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{language === 'en' ? 'Projects' : 'Proyectos'}</h1>
         </a>
         <div className="grid sm:grid-cols-2 py-8 gap-12">
-          {projectImages.map(({ lightImage, darkImage }, index) => (
-            <ProjectItem
-              key={data[index].id}
-              image={isDarkMode ? darkImage.default : lightImage.default}
-              title={data[index].title}
-              details={data[index].details}
-              url={data[index].url}
-              techs={data[index].techs}
-            />
-          ))}
+          {
+            data.map(({id, imageLight, imageDark, title, details, url, techs})=>(
+              <ProjectItem key={id} image={isDarkMode ? imageMap[imageDark] : imageMap[imageLight]} title={title} details={details} url={url} techs={techs} />
+            ))
+          }
         </div>
         <div className="flex flex-wrap items-center justify-center pt-5 [&>*]:m-1 dark:text-[#F4F4F9] text-[#000B11]">
           <FaHtml5 size={50}/>
