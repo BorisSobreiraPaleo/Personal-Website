@@ -1,8 +1,8 @@
 const enProjectsData = [
   {
     id: '001',
-    imageLight: '/src/assets/images/projects/enLightPersonalWeb.png',
-    imageDark: '/src/assets/images/projects/enDarkPersonalWeb.png',
+    imageLight: 'enLightPersonalWeb',
+    imageDark: 'enDarkPersonalWeb',
     title: 'Personal Web',
     details: 'Exhibition of resume and current portfolio',
     url: 'TODOURLTOGITHUBPROJECT',
@@ -10,8 +10,8 @@ const enProjectsData = [
   },
   {
     id: '002',
-    imageLight: '/src/assets/images/projects/timelapseGenerator.png',
-    imageDark: '/src/assets/images/projects/timelapseGenerator.png',
+    imageLight: 'timelapseGenerator',
+    imageDark: 'timelapseGenerator',
     title: 'Timelapse Generator',
     details: 'Transform videos in a folder into timelapse of custom length',
     url: 'TODOURLTOGITHUBPROJECT',

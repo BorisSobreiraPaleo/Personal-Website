@@ -4,11 +4,6 @@ import useTheme from "../../themeContext/useTheme"
 import enProjectsData from "../../assets/data/projects/enProjectsData"
 import esProjectsData from "../../assets/data/projects/esProjectsData"
 
-import enLightPersonalWeb from '../../assets/images/projects/enLightPersonalWeb.png';
-import enDarkPersonalWeb from '../../assets/images/projects/enDarkPersonalWeb.png';
-import esLightPersonalWeb from '../../assets/images/projects/esLightPersonalWeb.png';
-import esDarkPersonalWeb from '../../assets/images/projects/esDarkPersonalWeb.png';
-
 import { SiMongodb } from "react-icons/si"
 import { SiJavascript } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
@@ -36,6 +31,12 @@ import { SiApache } from "react-icons/si";
 import { SiXampp } from "react-icons/si";
 import { SiPowershell } from "react-icons/si";
 
+import enLightPersonalWeb from '/src/assets/images/projects/enLightPersonalWeb.png';
+import enDarkPersonalWeb from '/src/assets/images/projects/enDarkPersonalWeb.png';
+import esLightPersonalWeb from '/src/assets/images/projects/esLightPersonalWeb.png';
+import esDarkPersonalWeb from '/src/assets/images/projects/esDarkPersonalWeb.png';
+import timelapseGenerator from '/src/assets/images/projects/timelapseGenerator.png'
+
 const Projects = () => {
   const { language } = useLanguage()
   const { isDarkMode } = useTheme()
@@ -46,7 +47,8 @@ const Projects = () => {
     enLightPersonalWeb,
     enDarkPersonalWeb,
     esLightPersonalWeb,
-    esDarkPersonalWeb
+    esDarkPersonalWeb,
+    timelapseGenerator
   };
 
   return (
@@ -57,9 +59,14 @@ const Projects = () => {
         </a>
         <div className="grid sm:grid-cols-2 py-8 gap-12">
           {
-            data.map(({id, imageLight, imageDark, title, details, url, techs})=>(
-              <ProjectItem key={id} image={isDarkMode ? imageMap[imageDark] : imageMap[imageLight]} title={title} details={details} url={url} techs={techs} />
-            ))
+            data.map(({id, imageLight, imageDark, title, details, url, techs})=>{
+              console.log(imageMap)
+              console.log(imageDark)            
+              console.log(imageMap[imageDark])
+              return(
+                <ProjectItem key={id} image={isDarkMode ? imageMap[imageDark] : imageMap[imageLight]} title={title} details={details} url={url} techs={techs} />
+              )
+              })
           }
         </div>
         <div className="flex flex-wrap items-center justify-center pt-5 [&>*]:m-1 dark:text-[#F4F4F9] text-[#000B11]">
