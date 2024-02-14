@@ -44,9 +44,19 @@ const Projects = () => {
         </a>
         <div className="grid sm:grid-cols-2 py-8 gap-12">
           {
-            data.map(({id, imageLight, imageDark, title, details, url, techs})=>(
-              <ProjectItem key={id} image={isDarkMode ? imageDark : imageLight} title={title} details={details} url={url} techs={techs} />
-            ))
+            data.map(async ({id, imageLight, imageDark, title, details, url, techs})=>{
+              const image = isDarkMode ? imageDark : imageLight;
+              try {
+                const importedImage = await import(image);
+                return (
+                  <ProjectItem key={id} image={importedImage.default} title={title} details={details} url={url} techs={techs} />
+                )
+              }
+              catch (error) {
+                console.error('Error importing image:', error);
+                return null;
+              }
+            })
           }
         </div>
         <div className="flex flex-wrap items-center justify-center pt-5 [&>*]:m-1 dark:text-[#F4F4F9] text-[#000B11]">
