@@ -60,9 +60,6 @@ const Projects = () => {
         <div className="grid sm:grid-cols-2 py-8 gap-12">
           {
             data.map(({id, imageLight, imageDark, title, details, url, techs})=>{
-              console.log(imageMap)
-              console.log(imageDark)            
-              console.log(imageMap[imageDark])
               return(
                 <ProjectItem key={id} image={isDarkMode ? imageMap[imageDark] : imageMap[imageLight]} title={title} details={details} url={url} techs={techs} />
               )

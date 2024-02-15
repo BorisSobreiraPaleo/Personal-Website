@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-const CareerItem = ({year, title, subtitle, details}) => {
+const DateItem = ({year, title, subtitle, details}) => {
   return (
     <ol className="flex flex-col md:flex-row relative border-l border-[#03396c]" >
       <li className="mb-10 ml-4">
@@ -15,4 +15,4 @@ const CareerItem = ({year, title, subtitle, details}) => {
   )
 }
 
-export default CareerItem
+export default DateItem

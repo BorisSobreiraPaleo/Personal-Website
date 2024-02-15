@@ -1,7 +1,7 @@
-import CareerItem from "./CareerItem"
-import enCareerData from "../../assets/data/career/enCareerData"
-import esCareerData from "../../assets/data/career/esCareerData"
-import useLanguage from "../../languageContext/useLanguage"
+import DateItem from "./DateItem"
+import enCareerData from "../assets/data/career/enCareerData"
+import esCareerData from "../assets/data/career/esCareerData"
+import useLanguage from "../languageContext/useLanguage"
 
 const Career = () => {
   const { language } = useLanguage()
@@ -15,7 +15,7 @@ const Career = () => {
         <h1 className="text-4xl pb-8 font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{language === 'en' ? 'Career' : 'Carrera'}</h1>
         {
           invertedData.map(({id, year, title, subtitle, details})=>(
-            <CareerItem
+            <DateItem
               key={id}
               year={year}
               title={title}

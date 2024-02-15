@@ -1,5 +1,6 @@
 import Main from "./components/Main"
-import Career from "./components/Career/Career"
+import Career from "./components/Career"
+import Studies from "./components/Studies"
 import Projects from "./components/Projects/Projects"
 import Contact from "./components/Contact"
 import SideNav from "./components/SideNav"
@@ -21,6 +22,7 @@ function App() {
           <SideNav/>
           <Main/>
           <Career/>
+          <Studies/>
           <Projects/>
           <Contact/>
           <Footer/>

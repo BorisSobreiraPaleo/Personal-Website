@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { MdPersonOutline, MdWorkOutline, MdOutlineInsertChart, MdMailOutline, MdOutlineMenu } from "react-icons/md";
+import { PiStudentFill } from "react-icons/pi";
 import useLanguage from '../languageContext/useLanguage';
 
 const Sidenav = () => {
@@ -106,6 +107,15 @@ const Sidenav = () => {
               </div>
             </a>
             <a
+              href="#studies"
+              className={currentSection === 'studies' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-[#B7CEE1]/80'}
+            >
+              <div>
+                <PiStudentFill size={25} />
+                <span>{language === 'en' ? 'Studies' : 'Estudios'}</span>
+              </div>
+            </a>
+            <a
               href="#projects"
               className={currentSection === 'projects' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-[#B7CEE1]/80'}
             >
@@ -154,6 +164,13 @@ const Sidenav = () => {
               <a href='#career'>
                 <div className={currentSection === 'career' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-white/30 text-black'}>
                   <MdWorkOutline  size={25} />
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href='#studies'>
+                <div className={currentSection === 'studies' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-white/30 text-black'}>
+                  <PiStudentFill  size={25} />
                 </div>
               </a>
             </li>
