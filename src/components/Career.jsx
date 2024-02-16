@@ -12,7 +12,9 @@ const Career = () => {
   return (
     <section id="career" className="dark:bg-[#000B11]">
       <div className="max-w-[1040px] dark:bg-[#000B11] m-auto md:pl-20 p-4 pt-16" >
-        <h1 className="text-4xl pb-8 font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{language === 'en' ? 'Career' : 'Carrera'}</h1>
+        <a href='https://www.linkedin.com/in/borissobreirapaleo/' target="_blank" rel="noopener noreferrer">
+          <h1 className="text-4xl pb-8 font-bold text-center text-[#000B11] dark:text-[#F4F4F9] hover:underline">{language === 'en' ? 'Career' : 'Carrera'}</h1>
+        </a>
         {
           invertedData.map(({id, year, title, subtitle, details})=>(
             <DateItem
@@ -24,18 +26,6 @@ const Career = () => {
             />
           ))
         }
-        <p className="text-center dark:text-[#F4F4F9] text-[#000B11]">
-          {
-            language === 'en' ?
-            <span>
-              Feel free to explore more about my professional journey on my <a href="https://www.linkedin.com/in/borissobreirapaleo/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a> page. For a comprehensive overview of my skills and experiences, you can also download my <a href="link-to-cv" target="_blank" rel="noopener noreferrer" className="underline">CV</a>.
-            </span>
-            :
-            <span>
-              No dudes en explorar más sobre mi trayectoria profesional en mi página de <a href="https://www.linkedin.com/in/borissobreirapaleo/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a>. Para obtener una visión completa de mis habilidades y experiencias, también puedes descargar mi <a href="link-to-cv" target="_blank" rel="noopener noreferrer" className="underline">CV</a>.
-            </span>
-          }
-        </p>
       </div>
     </section>
   )

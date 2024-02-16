@@ -107,12 +107,12 @@ const Sidenav = () => {
               </div>
             </a>
             <a
-              href="#studies"
-              className={currentSection === 'studies' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-[#B7CEE1]/80'}
+              href="#education"
+              className={currentSection === 'education' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-[#B7CEE1]/80'}
             >
               <div>
                 <PiStudentFill size={25} />
-                <span>{language === 'en' ? 'Studies' : 'Estudios'}</span>
+                <span>{language === 'en' ? 'Education' : 'Educación'}</span>
               </div>
             </a>
             <a
@@ -168,8 +168,8 @@ const Sidenav = () => {
               </a>
             </li>
             <li>
-              <a href='#studies'>
-                <div className={currentSection === 'studies' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-white/30 text-black'}>
+              <a href='#education'>
+                <div className={currentSection === 'education' ? 'bg-[#03396c] text-white' : 'bg-[#005b96]/30 dark:bg-white/30 text-black'}>
                   <PiStudentFill  size={25} />
                 </div>
               </a>

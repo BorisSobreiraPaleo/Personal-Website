@@ -1,4 +1,4 @@
-const enStudiesData = [
+const enEducationData = [
   {
     id: "001",
     year: 2015,
@@ -34,11 +34,11 @@ const enStudiesData = [
     subtitle: 'Self-taught and Online Courses ',
     details: (
       <>
-        Experience in comprehensive application development using various technologies, showcasing the ability to build solutions from scratch. You can explore examples of my work in the <a className="underline" href="#projects">projects</a> section. Furthermore, I am committed to continuous learning and have supplemented my education with online courses, such as fireship.io, and have closely followed content offered by renowned creators such as Midudev and Eduardo Fierro.
+        Experience in comprehensive application development using various technologies, showcasing the ability to build solutions from scratch. You can explore examples of my work in the <a className="underline" href="#projects">projects</a> section. Furthermore, I am committed to continuous learning and have supplemented my education with online courses, such as <a className="underline" href="https://fireship.io/">fireship.io</a>, and have closely followed content offered by renowned creators such as <a className="underline" href="https://www.youtube.com/c/midudev">Midudev</a> and <a className="underline" href="https://www.youtube.com/c/EduardoFierroPro">Eduardo Fierro</a>.
       </>
     )
   }
   
 ]
 
-export default enStudiesData
+export default enEducationData

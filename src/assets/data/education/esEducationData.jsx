@@ -1,4 +1,4 @@
-const esStudiesData = [
+const esEducationData = [
   {
     id: '001',
     year: 2015,
@@ -34,10 +34,10 @@ const esStudiesData = [
     subtitle: 'Autodidacta y Cursos Online',
     details: (
       <>
-        Experiencia en el desarrollo integral de aplicaciones utilizando diversas tecnologías, destacando la capacidad para construir soluciones desde cero. Puedes explorar ejemplos de mi trabajo en la sección de <a className="underline" href="#projects">proyectos</a>. Además, estoy comprometido con el aprendizaje continuo y he complementado mi formación con cursos online, tales como fireship.io, y he seguido de cerca el contenido ofrecido por creadores reconocidos como Midudev y Eduardo Fierro.
+        Experiencia en el desarrollo integral de aplicaciones utilizando diversas tecnologías, destacando la capacidad para construir soluciones desde cero. Puedes explorar ejemplos de mi trabajo en la sección de <a className="underline" href="#projects">proyectos</a>. Además, estoy comprometido con el aprendizaje continuo y he complementado mi formación con cursos online, tales como <a className="underline" href="https://fireship.io/">fireship.io</a>, y he seguido de cerca el contenido ofrecido por creadores reconocidos como <a className="underline" href="https://www.youtube.com/c/midudev">Midudev</a> y <a className="underline" href="https://www.youtube.com/c/EduardoFierroPro">Eduardo Fierro</a>.
       </>
     )
   }
 ]
 
-export default esStudiesData
+export default esEducationData

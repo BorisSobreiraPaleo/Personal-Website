@@ -89,7 +89,7 @@ const Main = () => {
               repeat={Infinity}
             />
           </h2>
-          <div className='flex justify-between pt-6 w-full dark:text-[#F4F4F9] dark:drop-shadow-[0_4px_3px_rgba(0,0,0,0.9)] hover:[&>a]:text-blue-800 hover:[&>a]:scale-150 [&>a]:ease-in [&>a]:duration-200'>
+          <div className='flex justify-between pt-6 w-full dark:text-[#F4F4F9] dark:drop-shadow-[0_4px_3px_rgba(0,0,0,0.9)] hover:[&>a]:text-[#03396c] hover:[&>a]:scale-150 [&>a]:ease-out [&>a]:duration-200'>
             <a href='https://www.linkedin.com/in/borissobreirapaleo/' target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={40} />
             </a>

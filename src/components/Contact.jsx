@@ -134,7 +134,9 @@ const Contact = () => {
       <div>
         <ToastContainer />
         <div className="max-w-[1040px] m-auto md:pl-20 p-4 pt-16 dark:bg-[#000B11]">
-          <h1 className="py-4 text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9]">{contact}</h1>
+          <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer">
+            <h1 className="py-4 text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9] hover:underline">{contact}</h1>
+          </a>
           <p className="text-center py-8 dark:text-[#F4F4F9] text-[#000B11]">
             {
               language === 'en' ?
