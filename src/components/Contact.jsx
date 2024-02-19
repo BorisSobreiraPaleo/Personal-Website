@@ -2,7 +2,6 @@ import useLanguage from "../languageContext/useLanguage";
 import { useState } from "react";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import useTheme from "../themeContext/useTheme";
 
 
 const translations = {
@@ -26,7 +25,6 @@ const translations = {
 
 const Contact = () => {
 
-  const { isDarkMode } = useTheme()
   const { language } = useLanguage()
   const labels = language === 'en' ? translations['en'] : translations['es']
   const {
@@ -93,46 +91,77 @@ const Contact = () => {
     return isValid;
   };
 
-  const handleSubmit = async (e) => {
+
+  const handleSubmit = (e) => {
+
     e.preventDefault();
-    if (validateForm()) {
-      try {
-        const response = await fetch('https://getform.io/f/b90df46b-da69-4e3f-9d66-11628e8f5b7a', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(formData)
-        });
-        if (response.ok) {
-          console.log('Form submitted successfully');
-          toast.success(language === 'en' ? 'Form submitted successfully!' : 'Formulario enviado correctamente!', {
-            position: "bottom-center",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: isDarkMode ? "dark" : "light",
-            transition: Bounce,
-          });
-          setFormData(initialState);
-        } else {
-          console.error('Form submission failed');
-        }
-      } catch (error) {
-        console.error('Error submitting form:', error);
-      }
-    } else {
-      console.log('Form has errors. Please correct them.');
+    if (!validateForm()) {
+      toast.error(language === 'en' ? 'Please fill out all fields!' : 'Por favor, rellena todos los campos!', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Bounce
+      });
+      return;
     }
+
+    const action = e.target.getAttribute("action");
+
+    fetch(action, {
+      method: "POST",
+      body: new FormData(e.target),
+      headers: {
+        Accept: "application/json",
+      },
+    })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(() => {
+      toast.success(language === 'en' ? 'Form submitted successfully!' : 'Formulario enviado correctamente!', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Bounce
+      });
+      setFormData(initialState);
+    })
+    .catch((error) => {
+      console.error('There was an error with the fetch operation:', error);
+      toast.error(language === 'en' ? 'Error submitting the form! Please use another contact method' : 'Error al enviar el formulario! Por favor utiliza otro medio de contacto', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        transition: Bounce
+      });
+    });
   };
 
   return (
     <section id="contact" className="dark:bg-[#000B11]">
       <div>
-        <ToastContainer />
+        <ToastContainer
+          toastClassName="dark:bg-[#000B11] dark:text-[#F4F4F9] bg-[#FFFFFF] text-[#03396C]"
+          progressClassName="dark:bg-[#F4F4F9] bg-[#03396c]"
+        />
         <div className="max-w-[1040px] m-auto md:pl-20 p-4 pt-16 dark:bg-[#000B11]">
           <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer">
             <h1 className="py-4 text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9] hover:underline">{contact}</h1>
