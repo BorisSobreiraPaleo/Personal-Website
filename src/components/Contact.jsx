@@ -176,7 +176,7 @@ const Contact = () => {
             <a href="https://t.me/SevenSie7e" target="_blank" rel="noopener noreferrer" className="underline">Telegram</a>
           </p>
           <form
-          action="https://getform.io/f/b90df46b-da69-4e3f-9d66-11628e8f5b7a"
+          action="https://getform.io/f/RdGL47eD"
           onSubmit={ handleSubmit }
           method="POST"
           encType="multipart/form-data"
