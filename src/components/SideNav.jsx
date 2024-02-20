@@ -78,7 +78,7 @@ const Sidenav = () => {
   
   return (
     <div>
-      <div onClick={handleNav} className='md:hidden fixed right-0 z-50 flex justify-center items-center text-center rounded-full shadow-lg bg-[#005b96]/30 dark:bg-white/30 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300' >
+      <div onClick={handleNav} className='md:hidden fixed top-[138px] right-0 z-50 flex justify-center items-center text-center rounded-full shadow-lg bg-[#005b96]/30 dark:bg-white/30 mr-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300' >
         <MdOutlineMenu size={25}/>
       </div>
       {
@@ -141,11 +141,11 @@ const Sidenav = () => {
       }
 
 
-      <div className='md:block hidden fixed z-50 top-1/2 transform -translate-y-1/2'>
+      <div className='md:block hidden fixed z-50 top-1/2 transform -translate-y-1/2 right-0'>
         <div id="bubbleSide"
           className={`
-            fixed bg-black/50 dark:bg-white/50 backdrop-blur-lg rounded-full
-            left-[var(--left)] top-[var(--top)]
+            fixed ml-2 bg-black/50 dark:bg-white/50 backdrop-blur-lg rounded-full
+            right-[var(--right)] top-[var(--top)]
             w-[var(--width)] h-[var(--height)]
             transition-all duration-500 ease-in-out
             opacity-0 -z-10

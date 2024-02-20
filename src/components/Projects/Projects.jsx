@@ -53,7 +53,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="dark:bg-[#000B11]">
-      <div className="max-w-[1040px] m-auto md:pl-20 p-4 pt-16 dark:bg-[#000B11]">
+      <div className="max-w-[1040px] m-auto md:pr-20 p-4 pt-16 dark:bg-[#000B11]">
         <a href='https://github.com/BoriSeven' target="_blank" rel="noopener noreferrer">
           <h1 className="text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9] hover:underline">{language === 'en' ? 'Projects' : 'Proyectos'}</h1>
         </a>

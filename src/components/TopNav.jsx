@@ -10,7 +10,7 @@ const TopNav = () => {
     const bubbleTop = document.querySelector('#bubbleTop');
     
     const handleResize = () => {
-      setIsSmallScreen(window.innerHeight < 531);
+      setIsSmallScreen(window.innerHeight < 590);
     };
 
     handleResize();
@@ -53,16 +53,16 @@ const TopNav = () => {
     <div id='topBar'
       className={`
         ${isSmallScreen ?
-          'absolute top-1/2 right-0 transform -translate-y-1/2 z-40 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
+          'absolute top-1/2 transform -translate-y-1/2 z-40 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
         :
-          'absolute z-40 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
+          'absolute right-0 z-40 [&>ul>li>div]:flex [&>ul>li>div]:justify-center [&>ul>li>div]:items-center [&>ul>li>div]:text-center [&>ul>li>div]:rounded-full [&>ul>li>div]:shadow-lg [&>ul>li>div]:bg-[#005b96]/30 [&>ul>li>div]:dark:bg-white/30 [&>ul>li>div]:m-2 [&>ul>li>div]:p-4 [&>ul>li>div]:cursor-pointer [&>ul>li>div:hover]:scale-110 [&>ul>li>div]:ease-in [&>ul>li>div]:duration-300'
         }
       `}
     >
       <div id="bubbleTop"
         className={`
-          absolute bg-black/50 dark:bg-white/50 backdrop-blur-lg rounded-full
-          left-[var(--left)] top-[var(--top)]
+          absolute ml-2 bg-black/50 dark:bg-white/50 backdrop-blur-lg rounded-full
+          right-[var(--right)] top-[var(--top)]
           w-[var(--width)] h-[var(--height)]
           transition-all duration-500 ease-in-out
           opacity-0 
