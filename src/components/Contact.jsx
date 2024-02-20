@@ -2,7 +2,7 @@ import useLanguage from "../languageContext/useLanguage";
 import { useState } from "react";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const translations = {
   en: {
@@ -46,6 +46,7 @@ const Contact = () => {
 
   const [formData, setFormData] = useState(initialState)
   const [errors, setErrors] = useState({});
+  const [captchaValue, setCaptchaValue] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -84,6 +85,11 @@ const Contact = () => {
 
     if (!formData.message.trim()) {
       errors.message = language === 'en' ? 'Message is required' : 'El mensaje es obligatorio'
+      isValid = false;
+    }
+
+    if (!captchaValue) {
+      errors.captcha = language === 'en' ? 'Please complete the CAPTCHA' : 'Por favor completa el CAPTCHA'
       isValid = false;
     }
 
@@ -245,6 +251,13 @@ const Contact = () => {
               >
                 {send}
               </button>
+            </div>
+            <div>
+              <ReCAPTCHA
+                sitekey="6Ldi03kpAAAAAIzc12aJOitGjy_LhyYYjPPIYGXu"
+                onChange={setCaptchaValue}
+              />
+              {errors.captcha && <span className="text-red-500">{errors.captcha}</span>}
             </div>
           </form>
         </div>
