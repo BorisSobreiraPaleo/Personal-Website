@@ -25,7 +25,7 @@ const Footer = () => {
         }
         alt="mainWaveDark" className="h-7 w-full object-none object-bottom"/>
         </div>
-        <div className="flex flex-wrap items-center justify-center text-center pr-20 [&>*]:m-1 w-full h-auto text-[#000B11] text-2xl dark:bg-[#4d5559] bg-[#b2cddf]">
+        <div className="flex flex-wrap items-center justify-center text-center md:pr-20 [&>*]:m-1 w-full h-auto text-[#000B11] text-2xl dark:bg-[#4d5559] bg-[#b2cddf]">
           <div>
             <p> Boris Sobreira Paleo </p>
           </div>

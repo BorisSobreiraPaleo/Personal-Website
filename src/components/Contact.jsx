@@ -1,8 +1,10 @@
 import useLanguage from "../languageContext/useLanguage";
+import useTheme from "../themeContext/useTheme";
 import { useState } from "react";
 import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ReCAPTCHA from 'react-google-recaptcha';
+import { useEffect } from 'react';
 
 const translations = {
   en: {
@@ -24,9 +26,12 @@ const translations = {
 };
 
 const Contact = () => {
-
+  
+  const { isDarkMode } = useTheme()
+  
   const { language } = useLanguage()
   const labels = language === 'en' ? translations['en'] : translations['es']
+  
   const {
     contact,
     name,
@@ -41,21 +46,52 @@ const Contact = () => {
     phone: '',
     email: '',
     subject: '',
-    message: ''
+    message: '',
+    captcha: ''
   }
 
+  
   const [formData, setFormData] = useState(initialState)
   const [errors, setErrors] = useState({});
   const [captchaValue, setCaptchaValue] = useState(null);
+  
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value);
+    setErrors(prevErrors => ({
+      ...prevErrors,
+      captcha: '' // Limpiamos el mensaje de error cuando el captcha cambia
+    }));
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    
+    // Si es otro campo, actualiza el estado de formData
+    setFormData(prevFormData => ({
+      ...prevFormData,
       [name]: value
-    });
+    }));
+
+    // Limpiar errores
+    setErrors(prevErrors => ({
+      ...prevErrors,
+      [name]: ''
+    }));
+    
   };
 
+  useEffect(() => {
+    setErrors(prevErrors => ({
+      ...prevErrors,
+      name: prevErrors.name ? (language === 'en' ? 'Name is required' : 'El nombre es obligatorio') : '',
+      phone: prevErrors.phone ? (language === 'en' ? 'Phone is required' : 'El teléfono es obligatorio') : '',
+      email: prevErrors.email ? (language === 'en' ? 'Email is required' : 'El email es obligatorio') : '',
+      subject: prevErrors.subject ? (language === 'en' ? 'Subject is required' : 'El asunto es obligatorio') : '',
+      message: prevErrors.message ? (language === 'en' ? 'Message is required' : 'El mensaje es obligatorio') : '',
+      captcha: prevErrors.captcha ? (language === 'en' ? 'Please complete the CAPTCHA' : 'Por favor completa el CAPTCHA') : '',
+    }));
+  }, [language]);
+  
   const validateForm = () => {
     let errors = {};
     let isValid = true;
@@ -67,6 +103,9 @@ const Contact = () => {
 
     if (!formData.phone.trim()) {
       errors.phone = language === 'en' ? 'Phone is required' : 'El teléfono es obligatorio'
+      isValid = false;
+    }else if (!/^\+?\d{6,14}$/.test(formData.phone.trim())) {
+      errors.phone = language === 'en' ? 'Invalid phone number' : 'Número de teléfono inválido';
       isValid = false;
     }
 
@@ -244,20 +283,24 @@ const Contact = () => {
               />
               {errors.message && <span className="text-red-500">{errors.message}</span>}
             </div>
-            <div className="flex flex-col">
-              <button
-              className="bg-[#03396c] text-2xl text-[#f4f4f9] mt-4 w-full p-4 rounded-lg"
-              type="submit"
-              >
-                {send}
-              </button>
-            </div>
-            <div>
-              <ReCAPTCHA
-                sitekey="6Ldi03kpAAAAAIzc12aJOitGjy_LhyYYjPPIYGXu"
-                onChange={setCaptchaValue}
-              />
-              {errors.captcha && <span className="text-red-500">{errors.captcha}</span>}
+            <div className="flex mt-4 grid-cols-2 gap-4">
+              <div className="flex w-full" >
+                <button
+                  className="w-full bg-[#03396c] text-2xl text-[#f4f4f9] p-4 rounded-lg"
+                  type="submit"
+                >
+                  {send}
+                </button>
+              </div>
+              <div>
+                <ReCAPTCHA
+                  theme={isDarkMode ? "dark" : "light"}
+                  name="captcha"
+                  sitekey="6Ld02HkpAAAAAFJqVOzj66oJ3K-TCorsgPMoVNP2"
+                  onChange={handleCaptchaChange}
+                />
+                {errors.captcha && <span className="text-red-500">{errors.captcha}</span>}
+              </div>
             </div>
           </form>
         </div>
