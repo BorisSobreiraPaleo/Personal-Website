@@ -293,6 +293,7 @@ const Contact = () => {
                 </button>
               </div>
               <div>
+                <input type="hidden" name="_gotcha"/>
                 <ReCAPTCHA
                   hl={language === 'en' ? "en" : "es"}
                   theme={isDarkMode ? "dark" : "light"}
