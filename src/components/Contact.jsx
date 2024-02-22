@@ -294,6 +294,7 @@ const Contact = () => {
               </div>
               <div>
                 <ReCAPTCHA
+                  hl={language === 'en' ? "en" : "es"}
                   theme={isDarkMode ? "dark" : "light"}
                   name="captcha"
                   sitekey="6Ld02HkpAAAAAFJqVOzj66oJ3K-TCorsgPMoVNP2"
