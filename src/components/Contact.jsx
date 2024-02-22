@@ -208,9 +208,11 @@ const Contact = () => {
           progressClassName="dark:bg-[#F4F4F9] bg-[#03396c]"
         />
         <div className="max-w-[1040px] m-auto md:pr-20 p-4 pt-16 dark:bg-[#000B11]">
-          <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer">
-            <h1 className="py-4 text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9] hover:underline">{contact}</h1>
-          </a>
+          <div className="text-center">
+            <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer" className="inline-block">
+              <h1 className="text-4xl font-bold text-center text-[#000B11] dark:text-[#F4F4F9] hover:underline">{contact}</h1>
+            </a>
+          </div>
           <p className="text-center py-8 dark:text-[#F4F4F9] text-[#000B11]">
             {
               language === 'en' ?
