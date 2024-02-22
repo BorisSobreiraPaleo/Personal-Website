@@ -5,8 +5,6 @@ import { ToastContainer, toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useEffect } from 'react';
-const siteKey = import.meta.env.VITE_SITE_KEY;
-const formActionUrl = import.meta.env.VITE_FORM_ACTION_URL;
 
 const translations = {
   en: {
@@ -223,7 +221,7 @@ const Contact = () => {
             <a href="https://t.me/SevenSie7e" target="_blank" rel="noopener noreferrer" className="underline">Telegram</a>
           </p>
           <form
-          action={formActionUrl}
+          action="https://getform.io/f/YerPKkbO"
           onSubmit={ handleSubmit }
           method="POST"
           encType="multipart/form-data"
@@ -299,7 +297,7 @@ const Contact = () => {
                   hl={language === 'en' ? "en" : "es"}
                   theme={isDarkMode ? "dark" : "light"}
                   name="captcha"
-                  sitekey={siteKey}
+                  sitekey="6Ld02HkpAAAAAFJqVOzj66oJ3K-TCorsgPMoVNP2"
                   onChange={handleCaptchaChange}
                 />
                 {errors.captcha && <span className="text-red-500">{errors.captcha}</span>}
