@@ -1,6 +1,6 @@
 ## Description
 
-This website serves as a professional showcase, meticulously crafted to exhibit the breadth and depth of my expertise and capabilities in the field
+This website serves as a professional showcase, meticulously crafted to exhibit the breadth and depth of my expertise and capabilities in the web development field
 
 ## Author
 **Boris Sobreira Paleo**
