@@ -1,8 +1,21 @@
-# React + Vite
+## Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website serves as a professional showcase, meticulously crafted to exhibit the breadth and depth of my expertise and capabilities in the field
 
-Currently, two official plugins are available:
+## Author
+**Boris Sobreira Paleo**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* [LinkedIn](https://www.linkedin.com/in/borissobreirapaleo)
+* [GitHub](https://github.com/BorisSobreiraPaleo)
+* [HackerRank](https://www.hackerrank.com/profile/borissobreira)
+* [LeetCode](https://leetcode.com/BorisSobreiraPaleo)
+
+## Watch live example
+- [LINKTOGITHUBPAGES](LINKTOGITHUBPAGES)
+
+## Hiring
+If you want to hire me you can contact me at webcontact@borissobreirapaleo.com or [Telegram](https://t.me/SevenSie7e)
+
+
+## License
+MIT License
