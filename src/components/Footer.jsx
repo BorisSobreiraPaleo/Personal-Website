@@ -1,14 +1,21 @@
 import { SiLeetcode } from "react-icons/si";
 import { FaLinkedin, FaTelegram, FaHackerrank, FaGithub } from "react-icons/fa"
+import { FaFilePdf } from "react-icons/fa6";
 import footerWaveDark from "../assets/images/backgrounds/footerWaveDark.svg"
 import footerWaveLight from "../assets/images/backgrounds/footerWaveLight.svg"
 import useTheme from "../themeContext/useTheme";
+import esCurriculumVitae from "../assets/data/pdf/esBorisSobreiraPaleoCV.pdf"
+import enCurriculumVitae from "../assets/data/pdf/enBorisSobreiraPaleoCV.pdf"
+import useLanguage from '../languageContext/useLanguage'
+
 
 
 
 const Footer = () => {
   const year = new Date().getFullYear();
   const { isDarkMode } = useTheme()
+  const { language } = useLanguage()
+
 
   return (
     <section id="footer">
@@ -35,6 +42,9 @@ const Footer = () => {
             </a>
             <a href='https://github.com/BorisSobreiraPaleo' target="_blank" rel="noopener noreferrer">
               <FaGithub size={30}/>
+            </a>
+            <a href={ language === 'en' ? enCurriculumVitae : esCurriculumVitae } target="_blank" rel="noopener noreferrer">
+              <FaFilePdf size={30}/>
             </a>
             <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer">
               <FaTelegram size={30} />

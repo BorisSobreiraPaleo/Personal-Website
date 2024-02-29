@@ -96,6 +96,9 @@ const Main = () => {
             <a href='https://github.com/BorisSobreiraPaleo' target="_blank" rel="noopener noreferrer">
               <FaGithub size={40} />
             </a>
+            <a href={ language === 'en' ? enCurriculumVitae : esCurriculumVitae } target="_blank" rel="noopener noreferrer">
+              <FaFilePdf size={30}/>
+            </a>
             <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer">
               <FaTelegram size={40} />
             </a>
