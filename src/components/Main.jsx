@@ -8,6 +8,8 @@ import landscapeNight from '../assets/images/backgrounds/landscapeNight.png'
 import mainWaveLight from "../assets/images/backgrounds/mainWaveLight.svg"
 import useLanguage from '../languageContext/useLanguage'
 import useTheme from '../themeContext/useTheme'
+import esCurriculumVitae from "../assets/data/pdf/esBorisSobreiraPaleoCV.pdf"
+import enCurriculumVitae from "../assets/data/pdf/enBorisSobreiraPaleoCV.pdf"
 
 const Main = () => {
   
