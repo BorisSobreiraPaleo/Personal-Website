@@ -2,7 +2,9 @@ import DateItem from "./DateItem.jsx"
 import enEducationData from "../assets/data/education/enEducationData.jsx"
 import esEducationData from "../assets/data/education/esEducationData.jsx"
 import useLanguage from "../languageContext/useLanguage.jsx"
-import curriculumVitae from "../assets/data/pdf/Boris Sobreira Paleo Octubre 2023 CV Español.pdf"
+import esCurriculumVitae from "../assets/data/pdf/esBorisSobreiraPaleoCV.pdf"
+import enCurriculumVitae from "../assets/data/pdf/enBorisSobreiraPaleoCV.pdf"
+
 
 const Career = () => {
   const { language } = useLanguage()
@@ -33,11 +35,11 @@ const Career = () => {
           {
             language === 'en' ?
             <span>
-              Feel free to explore more about my professional journey on my <a href="https://www.linkedin.com/in/borissobreirapaleo/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a> page. For a comprehensive overview of my skills and experiences, you can also download my <a href={curriculumVitae} target="_blank" rel="noopener noreferrer" className="underline">CV</a>.
+              Feel free to explore more about my professional journey on my <a href="https://www.linkedin.com/in/borissobreirapaleo/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a> page. For a comprehensive overview of my skills and experiences, you can also download my <a href={enCurriculumVitae} target="_blank" rel="noopener noreferrer" className="underline">CV</a>.
             </span>
             :
             <span>
-              No dudes en explorar más sobre mi trayectoria profesional en mi página de <a href="https://www.linkedin.com/in/borissobreirapaleo/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a>. Para obtener una visión completa de mis habilidades y experiencias, también puedes descargar mi <a href={curriculumVitae} target="_blank" rel="noopener noreferrer" className="underline">CV</a>.
+              No dudes en explorar más sobre mi trayectoria profesional en mi página de <a href="https://www.linkedin.com/in/borissobreirapaleo/" target="_blank" rel="noopener noreferrer" className="underline">LinkedIn</a>. Para obtener una visión completa de mis habilidades y experiencias, también puedes descargar mi <a href={esCurriculumVitae} target="_blank" rel="noopener noreferrer" className="underline">CV</a>.
             </span>
           }
         </p>
