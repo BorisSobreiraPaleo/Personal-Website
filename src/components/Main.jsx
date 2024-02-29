@@ -93,16 +93,16 @@ const Main = () => {
             <a href='https://www.linkedin.com/in/borissobreirapaleo/' target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={40} />
             </a>
-            <a href='https://github.com/BoriSeven' target="_blank" rel="noopener noreferrer">
+            <a href='https://github.com/BorisSobreiraPaleo' target="_blank" rel="noopener noreferrer">
               <FaGithub size={40} />
             </a>
             <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer">
               <FaTelegram size={40} />
             </a>
-            <a href='https://www.hackerrank.com/profile/borissobreirapa1' target="_blank" rel="noopener noreferrer">
+            <a href='https://www.hackerrank.com/profile/borissobreira' target="_blank" rel="noopener noreferrer">
               <FaHackerrank size={40} />
             </a>
-            <a href='https://leetcode.com/BoriSeven/' target="_blank" rel="noopener noreferrer">
+            <a href='https://leetcode.com/BorisSobreiraPaleo/' target="_blank" rel="noopener noreferrer">
               <SiLeetcode size={40}/>
             </a>
           </div>
