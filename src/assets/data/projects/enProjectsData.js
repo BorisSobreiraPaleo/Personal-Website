@@ -5,7 +5,7 @@ const enProjectsData = [
     imageDark: 'enDarkPersonalWeb',
     title: 'Personal Web',
     details: 'Exhibition of resume and current portfolio',
-    url: 'TODOURLTOGITHUBPROJECT',
+    url: 'https://github.com/BorisSobreiraPaleo/Personal-Website',
     techs: ['react', 'tailwind']
   },
   {
