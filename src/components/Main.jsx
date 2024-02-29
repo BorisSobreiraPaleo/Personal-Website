@@ -1,5 +1,6 @@
 import { TypeAnimation } from  'react-type-animation'
 import { FaLinkedin, FaTelegram, FaHackerrank, FaGithub } from "react-icons/fa"
+import { FaFilePdf } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import mainWaveDark from "../assets/images/backgrounds/mainWaveDark.svg"
 import { useState, useEffect } from 'react'
@@ -99,7 +100,7 @@ const Main = () => {
               <FaGithub size={40} />
             </a>
             <a href={ language === 'en' ? enCurriculumVitae : esCurriculumVitae } target="_blank" rel="noopener noreferrer">
-              <FaFilePdf size={30}/>
+              <FaFilePdf size={40}/>
             </a>
             <a href='https://t.me/SevenSie7e' target="_blank" rel="noopener noreferrer">
               <FaTelegram size={40} />
