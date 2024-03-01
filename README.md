@@ -22,11 +22,13 @@ Furthermore, I have enhanced my proficiency in orchestrating the deployment proc
 * [Curriculum Vitae](https://github.com/BorisSobreiraPaleo/Personal-Website/blob/main/src/assets/data/pdf/enBorisSobreiraPaleoCV.pdf)
 * [HackerRank](https://www.hackerrank.com/profile/borissobreira)
 * [LeetCode](https://leetcode.com/BorisSobreiraPaleo)
-* [Porfolio web](https://www.borissobreirapaleo.com/)
+* [Portfolio Web](https://www.borissobreirapaleo.com/)
 
 ## Hiring ✍️
 If you want to hire me you can contact me at webcontact@borissobreirapaleo.com or [Telegram](https://t.me/SevenSie7e)
 
+## Installation ⚙️
+This project needs to be built or deployed to be able to view it
 
 ## License 📄
 MIT License
