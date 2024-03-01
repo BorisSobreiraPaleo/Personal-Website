@@ -11,12 +11,12 @@ Throughout the course of this project, I have acquired significant competencies 
 
 Furthermore, I have enhanced my proficiency in orchestrating the deployment process through Railway, a platform recognized for its seamless integration and streamlined deployment pipelines. This comprehensive journey has not only empowered me to establish a robust web presence but has also enriched my comprehension of contemporary web development methodologies and best practices.
 
-## Watch live example
+## Watch live example 👀
 - [www.borissobreirapaleo.com](https://www.borissobreirapaleo.com/)
 
-## Author
+## Author ✒️
 **Boris Sobreira Paleo**
-* [webcontact@borissobreirapaleo.com](webcontact@borissobreirapaleo.com)
+* webcontact@borissobreirapaleo.com
 * [LinkedIn](https://www.linkedin.com/in/borissobreirapaleo)
 * [GitHub](https://github.com/BorisSobreiraPaleo)
 * [Curriculum Vitae](https://github.com/BorisSobreiraPaleo/Personal-Website/blob/main/src/assets/data/pdf/enBorisSobreiraPaleoCV.pdf)
@@ -24,7 +24,7 @@ Furthermore, I have enhanced my proficiency in orchestrating the deployment proc
 * [LeetCode](https://leetcode.com/BorisSobreiraPaleo)
 * [Porfolio web](https://www.borissobreirapaleo.com/)
 
-## Hiring
+## Hiring ✍️
 If you want to hire me you can contact me at webcontact@borissobreirapaleo.com or [Telegram](https://t.me/SevenSie7e)
 
 
