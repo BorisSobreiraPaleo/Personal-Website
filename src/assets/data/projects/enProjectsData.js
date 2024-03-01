@@ -14,7 +14,7 @@ const enProjectsData = [
     imageDark: 'timelapseGenerator',
     title: 'Timelapse Generator',
     details: 'Transform videos in a folder into timelapse of custom length',
-    url: 'TODOURLTOGITHUBPROJECT',
+    url: 'https://github.com/BorisSobreiraPaleo/CreateTimelapse',
     techs: ['cmd', 'powershell']
   }
 ]

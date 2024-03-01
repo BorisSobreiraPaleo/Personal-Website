@@ -5,7 +5,7 @@ const esProjectsData = [
     imageDark: 'esDarkPersonalWeb',
     title: 'Web Personal',
     details: 'Exposición de currículum y portfolio actual',
-    url: 'TODOURLTOGITHUBPROJECT',
+    url: 'https://github.com/BorisSobreiraPaleo/Personal-Website',
     techs: ['react', 'tailwind']
   },
   {
@@ -14,7 +14,7 @@ const esProjectsData = [
     imageDark: 'timelapseGenerator',
     title: 'Generador de Timelapses',
     details: 'Transforma los vídeos de una carpeta en un timelapse de duración personalizada',
-    url: 'TODOURLTOGITHUBPROJECT',
+    url: 'https://github.com/BorisSobreiraPaleo/CreateTimelapse',
     techs: ['cmd', 'powershell']
   }
 ]
