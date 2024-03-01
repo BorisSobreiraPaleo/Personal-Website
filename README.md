@@ -1,5 +1,5 @@
 # Personal Website
-![Project Image](https://raw.githubusercontent.com/BorisSobreiraPaleo/Personal-Website/main/src/assets/images/backgrounds/landscapeNight.png)
+![Project Image](https://github.com/BorisSobreiraPaleo/Personal-Website/blob/main/src/assets/images/projects/enDarkPersonalWeb.png?raw=true)
 
 ## Description 📑
 
