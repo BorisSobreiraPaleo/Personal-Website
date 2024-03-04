@@ -16,6 +16,15 @@ const esProjectsData = [
     details: 'Transforma los vídeos de una carpeta en un timelapse de duración personalizada',
     url: 'https://github.com/BorisSobreiraPaleo/CreateTimelapse',
     techs: ['cmd', 'powershell']
+  },
+  {
+    id: '003',
+    imageLight: 'redtotelLight',
+    imageDark: 'redtotelDark',
+    title: 'Canales Redtotel',
+    details: 'Reenvío multimedia de subreddits a canales de telegram',
+    url: 'https://t.me/+rOvfAbcfAhliOWVk',
+    techs: ['node.js', 'mongodb']
   }
 ]
 

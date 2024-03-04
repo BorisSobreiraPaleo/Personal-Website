@@ -16,6 +16,15 @@ const enProjectsData = [
     details: 'Transform videos in a folder into timelapse of custom length',
     url: 'https://github.com/BorisSobreiraPaleo/CreateTimelapse',
     techs: ['cmd', 'powershell']
+  },
+  {
+    id: '003',
+    imageLight: 'redtotelLight',
+    imageDark: 'redtotelDark',
+    title: 'Redtotel Channels',
+    details: 'Forwarding media from subreddits to telegram channels',
+    url: 'https://t.me/+rOvfAbcfAhliOWVk',
+    techs: ['node.js', 'mongodb']
   }
 ]
 

@@ -4,12 +4,18 @@ import { SiTailwindcss } from 'react-icons/si';
 import useLanguage from '../../languageContext/useLanguage';
 import { VscTerminalCmd } from 'react-icons/vsc';
 import { SiPowershell } from 'react-icons/si';
+import { SiMongodb } from "react-icons/si"
+import { FaNodeJs } from "react-icons/fa";
+
+
 
 const iconMap = {
-  react: <FaReact size={50} />,
+  react: <FaReact size={50}/>,
   tailwind: <SiTailwindcss size={50}/>,
   cmd: <VscTerminalCmd size={50}/>,
-  powershell: <SiPowershell size={50}/>
+  powershell: <SiPowershell size={50}/>,
+  'node.js': <FaNodeJs size={50}/>,
+  mongodb: <SiMongodb size={50}/>
 };
 
 const ProjectItem = ({image, title, details, url, techs}) => {

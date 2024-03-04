@@ -36,6 +36,9 @@ import enDarkPersonalWeb from '/src/assets/images/projects/enDarkPersonalWeb.png
 import esLightPersonalWeb from '/src/assets/images/projects/esLightPersonalWeb.png';
 import esDarkPersonalWeb from '/src/assets/images/projects/esDarkPersonalWeb.png';
 import timelapseGenerator from '/src/assets/images/projects/timelapseGenerator.png'
+import redtotelLight from '/src/assets/images/projects/redtotelLight.png'
+import redtotelDark from '/src/assets/images/projects/redtotelDark.png'
+
 
 const Projects = () => {
   const { language } = useLanguage()
@@ -48,7 +51,9 @@ const Projects = () => {
     enDarkPersonalWeb,
     esLightPersonalWeb,
     esDarkPersonalWeb,
-    timelapseGenerator
+    timelapseGenerator,
+    redtotelLight,
+    redtotelDark
   };
 
   return (
