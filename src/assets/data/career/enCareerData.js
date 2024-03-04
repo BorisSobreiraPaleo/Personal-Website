@@ -24,14 +24,14 @@ const enCareerData = [
     id: "004",
     year: 2021,
     title: "Web Application Developer and Systems Administrator",
-    subtitle: "Liceo Casino",
+    subtitle: "Liceo Casino of Pontevedra",
     details: "From application development and IT consulting to data retrieval and computer hardware maintenance. Additionally, executed backup and restoration strategies, offered network assistance and managed email service transitions."
   },
   {
     id: "005",
     year: 2022,
     title: "Web Application Developer and Systems Administrator",
-    subtitle: "Liceo Casino",
+    subtitle: "Liceo Casino of Pontevedra",
     details: "Focused on website creation and maintenance, computer equipment repair, data retrieval, along with proficient implementation of backup and recovery solutions, offering network support and managing email data migrations."
   }
   

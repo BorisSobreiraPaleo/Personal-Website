@@ -24,14 +24,14 @@ const esCareerData = [
     id: '004',
     year: 2021,
     title: 'Desarrollador de Aplicaciones Web y Administrador de Sistemas',
-    subtitle: 'Liceo Casino',
+    subtitle: 'Liceo Casino de Pontevedra',
     details: 'Desde el desarrollo de aplicaciones y consultoría IT hasta la recuperación de datos y mantenimiento de hardware. Además llevé a cabo las estrategias de copias de seguridad y restauración, ofrecí asistencia técnica de red y gestioné la migración del servicio de email.'
   },
   {
     id: "005",
     year: 2022,
     title: "Desarrollador de Aplicaciones Web y Administrador de Sistemas",
-    subtitle: "Liceo Casino",
+    subtitle: "Liceo Casino de Pontevedra",
     details: "Enfocado en la creación y mantenimiento de sitios web, reparación de equipos informáticos, recuperación de datos, junto con la implementación de copias de seguridad periódicas y sistemas de recuperación de datos, ofreciendo asistencia de red y gestión de migración de email."
   }
 ]
