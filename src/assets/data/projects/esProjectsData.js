@@ -18,13 +18,13 @@ const esProjectsData = [
     techs: ['cmd', 'powershell']
   },
   {
-    id: '003',
-    imageLight: 'redtotelLight',
-    imageDark: 'redtotelDark',
-    title: 'Canales Redtotel',
-    details: 'Reenvío multimedia de subreddits a canales de telegram',
-    url: 'https://t.me/+rOvfAbcfAhliOWVk',
-    techs: ['node.js', 'mongodb']
+    id: '004',
+    imageLight: 'pregnancyVisitsCalculator',
+    imageDark: 'pregnancyVisitsCalculator',
+    title: 'Calculadora Visitas Embarazo',
+    details: 'En construcción',
+    url: 'https://www.e-seguimientoembarazo.org/',
+    techs: ['react', 'tailwind']
   }
 ]
 

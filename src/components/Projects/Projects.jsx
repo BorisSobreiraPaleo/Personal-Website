@@ -38,6 +38,7 @@ import esDarkPersonalWeb from '/src/assets/images/projects/esDarkPersonalWeb.png
 import timelapseGenerator from '/src/assets/images/projects/timelapseGenerator.png'
 import redtotelLight from '/src/assets/images/projects/redtotelLight.png'
 import redtotelDark from '/src/assets/images/projects/redtotelDark.png'
+import pregnancyVisitsCalculator from '/src/assets/images/projects/pregnancyVisitsCalculator.png'
 
 
 const Projects = () => {
@@ -53,7 +54,8 @@ const Projects = () => {
     esDarkPersonalWeb,
     timelapseGenerator,
     redtotelLight,
-    redtotelDark
+    redtotelDark,
+    pregnancyVisitsCalculator
   };
 
   return (

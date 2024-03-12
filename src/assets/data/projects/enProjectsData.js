@@ -25,6 +25,15 @@ const enProjectsData = [
     details: 'Forwarding media from subreddits to telegram channels',
     url: 'https://t.me/+rOvfAbcfAhliOWVk',
     techs: ['node.js', 'mongodb']
+  },
+  {
+    id: '004',
+    imageLight: 'pregnancyVisitsCalculator',
+    imageDark: 'pregnancyVisitsCalculator',
+    title: 'Pregnancy Visits Calculator',
+    details: 'In construction',
+    url: 'https://www.e-seguimientoembarazo.org/',
+    techs: ['react', 'tailwind']
   }
 ]
 

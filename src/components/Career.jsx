@@ -18,15 +18,18 @@ const Career = () => {
           </a>
         </div>
         {
-          invertedData.map(({id, year, title, subtitle, details})=>(
-            <DateItem
-              key={id}
-              year={year}
-              title={title}
-              subtitle={subtitle}
-              details={details}
-            />
-          ))
+          invertedData.map(({id, year, title, subtitle, details, techs})=>{
+            return (
+              <DateItem
+                key={id}
+                year={year}
+                title={title}
+                subtitle={subtitle}
+                details={details}
+                techs={techs}
+              />
+            )
+          })
         }
       </div>
     </section>
