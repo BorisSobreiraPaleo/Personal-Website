@@ -285,16 +285,8 @@ const Contact = () => {
               />
               {errors.message && <span className="text-red-500">{errors.message}</span>}
             </div>
-            <div className="flex mt-4 grid-cols-2 gap-4">
-              <div className="flex w-full" >
-                <button
-                  className="w-full bg-[#03396c] text-2xl text-[#f4f4f9] p-4 rounded-lg"
-                  type="submit"
-                >
-                  {send}
-                </button>
-              </div>
-              <div>
+            <div className="grid md:flex mt-4 md:grid-cols-2 md:gap-4 w-full">
+              <div className="flex items-center justify-center">
                 <input type="hidden" name="_gotcha"/>
                 <ReCAPTCHA
                   hl={language === 'en' ? "en" : "es"}
@@ -304,6 +296,14 @@ const Contact = () => {
                   onChange={handleCaptchaChange}
                 />
                 {errors.captcha && <span className="text-red-500">{errors.captcha}</span>}
+              </div>
+              <div className="flex w-full mt-4 md:mt-0" >
+                <button
+                  className="w-full bg-[#03396c] text-2xl text-[#f4f4f9] md:p-4 p-5 rounded-lg"
+                  type="submit"
+                >
+                  {send}
+                </button>
               </div>
             </div>
           </form>
