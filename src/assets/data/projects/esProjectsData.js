@@ -18,6 +18,15 @@ const esProjectsData = [
     techs: ['cmd', 'powershell']
   },
   {
+    id: '003',
+    imageLight: 'redtotelLight',
+    imageDark: 'redtotelDark',
+    title: 'Canales Redtotel',
+    details: 'Reenvío multimedia de subreddits a canales de telegram',
+    url: 'https://t.me/+rOvfAbcfAhliOWVk',
+    techs: ['node.js', 'mongodb']
+  },
+  {
     id: '004',
     imageLight: 'pregnancyVisitsCalculator',
     imageDark: 'pregnancyVisitsCalculator',
