@@ -42,7 +42,7 @@ const esCareerData = [
   {
     id: "006",
     year: 2023,
-    title: "Web Application Developer",
+    title: "Desarrollador de Aplicaciones Web",
     subtitle: "Fiverr, Upwork, Freelancer, Arc",
     details: "Desarrollo web con experiencia en la creación de sitios web dinámicos y funcionales, corrección de errores y mejora del rendimiento. Especializado en diseño responsivo, corrección de errores y optimización de código para una experiencia de usuario excepcional.",
     techs: ['JavaScript', 'MongoDB', 'Express.js', 'React', 'Node.js']
