@@ -26,7 +26,8 @@ const Main = () => {
         1000,
         'React',
         1000,
-        'Node.js'
+        'Node.js',
+        1000
       ])
     } else {
       return ([
@@ -36,7 +37,8 @@ const Main = () => {
         1000,
         'React',
         1000,
-        'Node.js'
+        'Node.js',
+        1000
       ])
     }
   });
@@ -50,7 +52,8 @@ const Main = () => {
         1000,
         'React',
         1000,
-        'Node.js'
+        'Node.js',
+        1000
       ])
     } else {
       setSequence ([
@@ -60,7 +63,8 @@ const Main = () => {
         1000,
         'React',
         1000,
-        'Node.js'
+        'Node.js',
+        1000
       ])
     }
   }, [language]);
