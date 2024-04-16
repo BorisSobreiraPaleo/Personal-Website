@@ -20,17 +20,23 @@ const Main = () => {
   const [sequence, setSequence] = useState(()=>{
     if (language === 'es'){
       return ([
-        'Developer',
+        'MongoDB',
         1000,
-        'Sysadmin',
-        1000
+        'Express.js',
+        1000,
+        'React',
+        1000,
+        'Node.js'
       ])
     } else {
       return ([
-        'Developer',
+        'MongoDB',
         1000,
-        'Sysadmin',
-        1000
+        'Express.js',
+        1000,
+        'React',
+        1000,
+        'Node.js'
       ])
     }
   });
@@ -38,17 +44,23 @@ const Main = () => {
   useEffect(() => {
     if (language === 'es'){
       setSequence ([
-        'Developer',
+        'MongoDB',
         1000,
-        'Sysadmin',
-        1000
+        'Express.js',
+        1000,
+        'React',
+        1000,
+        'Node.js'
       ])
     } else {
       setSequence ([
-        'Developer',
+        'MongoDB',
         1000,
-        'Sysadmin',
-        1000
+        'Express.js',
+        1000,
+        'React',
+        1000,
+        'Node.js'
       ])
     }
   }, [language]);
@@ -83,7 +95,7 @@ const Main = () => {
         <div className='absolute max-w-[700px] z-20 flex flex-col top-1/2 transform -translate-y-[90%]'>
           <h1 className='sm:text-5xl text-4xl font-bold dark:text-[#F4F4F9] dark:drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]'>Boris Sobreira Paleo</h1>
           <h2 className='flex sm:text-3xl text-2xl pt-4 dark:text-[#F4F4F9] dark:drop-shadow-[0_4px_3px_rgba(0,0,0,0.5)]'>
-            {language === 'es' ? 'Experto' : 'Expert'}
+            {language === 'es' ? 'Especializado en MERN:' : 'Specialized in MERN:'}
             <TypeAnimation
               sequence={sequence}
               wrapper="div"
