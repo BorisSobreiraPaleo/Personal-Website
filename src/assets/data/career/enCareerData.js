@@ -38,6 +38,14 @@ const enCareerData = [
     subtitle: "Liceo Casino of Pontevedra",
     details: "Focused on website creation and maintenance, computer equipment repair, data retrieval, along with proficient implementation of backup and recovery solutions, offering network support and managing email data migrations.",
     techs: ['Backups', 'HTML', 'CSS', 'JavaScript', 'Vite', 'NPM', 'React.js', 'Tailwind', 'phpMyAdmin', 'MongoDB', 'MariaDB', 'MySQL', 'Node.js', 'Git', 'GitHub', 'ESLint', 'WordPress', 'SEO', 'Bash', 'PowerShell']
+  },
+  {
+    id: "006",
+    year: 2023,
+    title: "Web Application Developer",
+    subtitle: "Fiverr, Upwork, Freelancer, Arc",
+    details: "Web development with expertise in creating dynamic and functional websites, bug fixing, and performance enhancement. Specialized in responsive design and code optimization for an exceptional user experience.",
+    techs: ['JavaScript', 'MongoDB', 'Express.js', 'React', 'Node.js']
   }
   
 ]
