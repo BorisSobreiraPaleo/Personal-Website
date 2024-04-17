@@ -23,7 +23,7 @@ const esProjectsData = [
     imageDark: 'redtotelDark',
     title: 'Canales Redtotel',
     details: 'Reenvío multimedia de subreddits a canales de telegram',
-    url: 'https://t.me/+rOvfAbcfAhliOWVk',
+    url: 'https://t.me/s/redtotelsafe/8',
     techs: ['node.js', 'mongodb']
   },
   {

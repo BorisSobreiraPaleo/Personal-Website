@@ -23,7 +23,7 @@ const enProjectsData = [
     imageDark: 'redtotelDark',
     title: 'Redtotel Channels',
     details: 'Forwarding media from subreddits to telegram channels',
-    url: 'https://t.me/+rOvfAbcfAhliOWVk',
+    url: 'https://t.me/s/redtotelsafe/8',
     techs: ['node.js', 'mongodb']
   },
   {
